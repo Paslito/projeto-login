@@ -3,13 +3,56 @@
 :root {
 
     --cor01: #FBFBFB;
-    --cor02: #777A73;
-    --cor03: #F37F27;
-    --cor04: #050404;
+    --cor02: #E2EFDE;
+    --cor03: #777A73;
+    --cor04: #F37F27;
+    --cor05: #050404;
 
 }
 
 * {
     padding: 0px;
     margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor04);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*faz tudo o que estiver fora fica invisivel*/
+
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--cor02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.581);
+}
+
+section#login > div#image {
+    display: block;
+    height: 200px;
+    background: var(--cor04) url(../image/building.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+
 }
