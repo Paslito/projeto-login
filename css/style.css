@@ -6,7 +6,9 @@
     --cor02: #E2EFDE;
     --cor03: #777A73;
     --cor04: #F37F27;
-    --cor05: #050404;
+    --cor05: #b8611f;
+    --cor06: #4A27F2;
+    --cor07: #050404;
 
 }
 
@@ -39,7 +41,7 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    background-color: var(--cor02);
+    background-color: var(--cor01);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.581);
 
     transition: width .3s, height .3s;
@@ -65,6 +67,58 @@ div#formulario > h1 {
     margin-bottom: 10px;
 }
 
-dic#formulario > p {
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: var(--cor06);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form > div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor04);
+    color: var(--cor01);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor05);
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    margin-top: 5px;
+    background-color: var(--cor03);
+    color: var(--cor01);
+    border: 1px solid var(--cor04);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: rgb(255, 160, 87);
+}
+
+form > a.botao > i {
     font-size: 0.8em;
 }
